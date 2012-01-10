@@ -1,0 +1,31 @@
+CH1_VOLT 7
+TRIGGER  5
+TIMEBASE 0 
+SAMPLE_COUNT 1000
+SAMPLE_BEFORE_TRIGGER 500
+TRACE_NUMBER 20 
+ITER_r1_min 0
+ITER_r1_max 7 
+ITER_c1_min 0
+ITER_c1_max 7 
+ITER_r2_min 0
+ITER_r2_max 7 
+ITER_c2_min 0
+ITER_c2_max 7 
+#####################
+
+
+TIMEBASE - dopuszczalen są wartosci od 0 do 2^32-1. 0 to 1 ns, 1 - 2ns, 2 - 4 ns, 3 - 8 ns, 4 - 16 ns , 5 - 24 ns
+
+CH1_VOLT - skala pionowa. Moze przybierac wartosci z tablicy  10,20,50,100,200,500,1000,2000,5000,10000,20000,50000 [mV]. Tablica iterowana od 0.
+
+TRIGGER - poziom wyzwalania w mV
+
+SAMPLE_COUNT - ilosc sampli jakie zbierze oscyloskop
+
+SAMPLE_BEFORE_TRIGGER - ilosc sampli zebranych przed pojawieniem sie trygera. Ta ilosc zawiera się w SAMPLE_COUNT
+
+TRACE_NUMBER - ilosc przebiegów, które będziemy uśredniać
+
+ITER_min indeksy minimalne ITER_max indeksy maksymalne mogą przyjmowac wartości maksymalnie 7 (włącznie)
+

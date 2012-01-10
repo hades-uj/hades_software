@@ -1,0 +1,7 @@
+Note: to have signals/slots working we need to create a dictionary for the class MyMainFrame, i.e. we create
+the file ex2aLinkDef.h containing the line:
+#pragma link C++ class MyMainFrame;
+We compile the example:
+rootcint -f data_showDict.cpp -c data_show.h ex2aLinkDef.h
+g++ `root-config --cflags --glibs` -o example2a example2a.cxx ex2aDict.cxx
+

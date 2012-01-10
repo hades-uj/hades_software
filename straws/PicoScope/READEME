@@ -1,0 +1,5 @@
+Catalog contains two catalogs with two different programs. The description is as followed:
+data_collection: with program that collects data from picoScope5023 device. It takes 4096 traces of a pulse
+		 each for different ASIC configuration. The collected data is stored in output sub catalog.
+data_show: contains program which draws several histograms at once just to control data_collection's output.
+	   It should be run in data_collection's sub catalog called output

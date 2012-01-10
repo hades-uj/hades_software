@@ -45,6 +45,8 @@ sub checkDate {
 		update();	
 	}
 
+
+	close FILE;
 }
 
 sub update {
@@ -60,14 +62,14 @@ sub update {
 
 
 while (true) {
+
 	my @t = list("/home/shower/hades_software");
 
 	if(scalar(@t) != scalar(@previousList)) { system("git add ."); }
 	
 	checkDate($_) for list ("/home/shower/hades_software");
 
-	print "sleep\n";
-	sleep(20);
+	sleep(86400);
 }
 
 
