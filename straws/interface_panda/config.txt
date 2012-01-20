@@ -1,0 +1,8 @@
+stty -F /dev/ttyUSB0 speed 9600
+echo
+ >/dev/ttyUSB0
+33120324400
+33120324400
+
+//current settings
+//default setting
