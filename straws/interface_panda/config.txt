@@ -3,6 +3,3 @@ echo
  >/dev/ttyUSB0
 33120324400
 33120324400
-
-//current settings
-//default setting
